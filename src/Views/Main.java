@@ -47,6 +47,11 @@ public class Main extends javax.swing.JFrame {
         btnGauss.setText("Matrices Gauss");
 
         btnJacobi.setText("Metodo Jacobi");
+        btnJacobi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnJacobiActionPerformed(evt);
+            }
+        });
 
         btnSeidel.setText("Metodo Gaus-Seidel");
 
@@ -88,6 +93,13 @@ public class Main extends javax.swing.JFrame {
         ero.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnCerradosActionPerformed
+
+    private void btnJacobiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJacobiActionPerformed
+        // TODO add your handling code here:
+        Jacobi metj = new Jacobi();
+        metj.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnJacobiActionPerformed
 
     /**
      * @param args the command line arguments
